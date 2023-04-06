@@ -114,5 +114,14 @@ M09\nG0 Z7.
 
 G0 X32.2\NZ7.
 M09\nG0 X32.2\nZ7.
-```
-* * *
+
+## FIND ALL X VALUES
+X(?:\d+\.\d+|\d+)
+X(\d+\.\d+)
+X(\d+\.\d+)(?:Y(\d+\.\d+))?|Y(\d+\.\d+)
+
+## FIND ALL Y VALUES
+Y(\d+\.\d+)
+
+### FIND TOOL STAGE ON G43 BLOCK
+(T1\n)(?:(.*?M106 +)([\d]+))*?(?!\nT1\n)
